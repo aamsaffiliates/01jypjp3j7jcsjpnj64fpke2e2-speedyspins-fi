@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietosuojakäytäntö - Speedy Spins Casino</title>
+    <meta name="description" content="Speedy Spins Casino tietosuojakäytäntö. Lue kuinka käsittelemme henkilötietojasi turvallisesti ja GDPR-säädösten mukaisesti.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-blue': '#1e40af',
+                        'casino-dark': '#0f172a',
+                        'casino-light': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" style="top: 10%; left: 5%;">💥</div>
+        <div class="floating-emoji" style="top: 20%; right: 10%;">🎯</div>
+        <div class="floating-emoji" style="top: 60%; left: 8%;">💸</div>
+        <div class="floating-emoji" style="top: 80%; right: 15%;">€</div>
+        <div class="floating-emoji" style="top: 40%; left: 90%;">🚀</div>
+        <div class="floating-emoji" style="top: 70%; left: 3%;">⭐</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-4 left-4 right-4 z-50 bg-black/80 backdrop-blur-lg rounded-2xl border border-casino-blue/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#hero" class="nav-link">Koti</a>
+                    <a href="/#games" class="nav-link">Pelit</a>
+                    <a href="/protomotions" class="nav-link">Bonukset</a>
+                    <a href="/#about" class="nav-link">Tietoa</a>
+                    <a href="/faq" class="nav-link">FAQ</a>
+                </div>
+                <button onclick="redirectToDeposit()" class="cta-button">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="hero-title mb-6">Tietosuojakäytäntö</h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Yksityisyytesi on meille tärkeää. Tässä tietosuojakäytännössä kerromme, kuinka keräämme, käsittelemme ja suojaamme henkilötietojasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Content -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Introduction -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">1. Johdanto</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Tämä tietosuojakäytäntö koskee Speedy Spins Casino -verkkosivustoa ja -palveluja. Olemme sitoutuneet suojaamaan käyttäjiemme yksityisyyttä ja henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) ja muiden sovellettavien tietosuojalakien mukaisesti.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Rekisterinpitäjänä toimii Speedy Spins Casino, joka toimii Anjouan Gaming -lisenssin alaisuudessa. Yhteystietomme löydät tämän käytännön lopusta.
+                        </p>
+                    </div>
+
+                    <!-- Data Collection -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">2. Kerättävät Tiedot</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Keräämme seuraavia henkilötietoja palvelujemme tarjoamiseksi:
+                        </p>
+                        
+                        <h3 class="text-xl font-semibold mb-3 text-casino-light">Rekisteröitymistiedot:</h3>
+                        <ul class="list-disc list-inside text-gray-300 mb-4 space-y-1">
+                            <li>Nimi ja syntymäaika</li>
+                            <li>Sähköpostiosoite ja puhelinnumero</li>
+                            <li>Osoitetiedot</li>
+                            <li>Käyttäjätunnus ja salasana</li>
+                            <li>Henkilöllisyystodistuksen tiedot (ikävarmistusta varten)</li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold mb-3 text-casino-light">Maksutiedot:</h3>
+                        <ul class="list-disc list-inside text-gray-300 mb-4 space-y-1">
+                            <li>Pankkitilin tai maksukortin tiedot</li>
+                            <li>Talletukset ja kotiutukset</li>
+                            <li>Transaktiohistoria</li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold mb-3 text-casino-light">Pelitiedot:</h3>
+                        <ul class="list-disc list-inside text-gray-300 mb-4 space-y-1">
+                            <li>Pelihistoria ja -tilastot</li>
+                            <li>Bonusten käyttö</li>
+                            <li>Vedonlyöntihistoria</li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold mb-3 text-casino-light">Tekniset tiedot:</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>IP-osoite ja sijaintitiedot</li>
+                            <li>Laitteen tiedot ja selaintyyppi</li>
+                            <li>Evästeet ja käyttödata</li>
+                            <li>Sivuston käyttöloki</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Usage -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">3. Tietojen Käyttötarkoitukset</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Käytämme keräämiämme tietoja seuraaviin tarkoituksiin:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>Palvelun tarjoaminen:</strong> Tilin hallinta, pelien tarjoaminen ja asiakaspalvelu</li>
+                            <li><strong>Turvallisuus:</strong> Petoksen ehkäisy, ikävarmistus ja vastuullisen pelaamisen valvonta</li>
+                            <li><strong>Lakisääteiset velvoitteet:</strong> Rahanpesun estäminen ja verotukseen liittyvät velvoitteet</li>
+                            <li><strong>Markkinointi:</strong> Tarjousten ja kampanjoiden lähettäminen (suostumuksella)</li>
+                            <li><strong>Palvelun kehittäminen:</strong> Käyttökokemuksen parantaminen ja uusien ominaisuuksien kehittäminen</li>
+                            <li><strong>Asiakaspalvelu:</strong> Tukipyyntöjen käsittely ja ongelmien ratkaisu</li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal Basis -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">4. Käsittelyn Oikeusperuste</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Henkilötietojen käsittely perustuu seuraaviin oikeusperusteisiin:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>Sopimus:</strong> Tietojen käsittely on välttämätöntä palvelusopimuksen täyttämiseksi</li>
+                            <li><strong>Lakisääteinen velvoite:</strong> Rahanpesun estäminen, verotus ja lisenssivaatimukset</li>
+                            <li><strong>Oikeutettu etu:</strong> Petoksen ehkäisy, turvallisuus ja palvelun kehittäminen</li>
+                            <li><strong>Suostumus:</strong> Markkinointiviestintä ja evästeiden käyttö</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Sharing -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">5. Tietojen Jakaminen</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Emme myy henkilötietojasi kolmansille osapuolille. Voimme jakaa tietoja seuraavissa tilanteissa:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>Palveluntarjoajat:</strong> Maksunkäsittelijät, pelintarjoajat ja tekninen tuki</li>
+                            <li><strong>Viranomaiset:</strong> Lakisääteisten velvoitteiden täyttämiseksi</li>
+                            <li><strong>Oikeudelliset syyt:</strong> Oikeudenkäyntien yhteydessä tai lain vaatimuksesta</li>
+                            <li><strong>Liiketoimintasiirrot:</strong> Yrityskauppojen yhteydessä</li>
+                        </ul>
+                        
+                        <p class="text-gray-300 leading-relaxed mt-4">
+                            Kaikki kolmannet osapuolet ovat sitoutuneet noudattamaan asianmukaisia tietosuojastandardeja ja käsittelemään tietojasi vain ohjeidemme mukaisesti.
+                        </p>
+                    </div>
+
+                    <!-- Data Security -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">6. Tietoturva</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Käytämme alan parhaita turvallisuustoimenpiteitä henkilötietojesi suojaamiseksi:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>SSL-salaus:</strong> Kaikki tiedonsiirto on suojattu 256-bittisellä SSL-salauksella</li>
+                            <li><strong>Palomuurit:</strong> Edistyneet palomuurit suojaavat palvelimiamme</li>
+                            <li><strong>Pääsynhallinta:</strong> Rajoitettu pääsy henkilötietoihin vain valtuutetulla henkilöstöllä</li>
+                            <li><strong>Säännölliset auditoinnit:</strong> Turvallisuustoimenpiteiden säännöllinen tarkastus</li>
+                            <li><strong>Tietojen minimointi:</strong> Keräämme vain välttämättömät tiedot</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Retention -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">7. Tietojen Säilytysaika</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Säilytämme henkilötietojasi vain niin kauan kuin on tarpeen:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>Aktiivinen tili:</strong> Tiedot säilytetään tilin ollessa aktiivinen</li>
+                            <li><strong>Suljettu tili:</strong> 7 vuotta tilin sulkemisesta (lakisääteiset velvoitteet)</li>
+                            <li><strong>Markkinointitiedot:</strong> Kunnes peruutat suostumuksesi</li>
+                            <li><strong>Tekniset lokit:</strong> 12 kuukautta turvallisuussyistä</li>
+                        </ul>
+                        
+                        <p class="text-gray-300 leading-relaxed mt-4">
+                            Tietojen säilytysajat voivat vaihdella lakisääteisten velvoitteiden mukaan.
+                        </p>
+                    </div>
+
+                    <!-- User Rights -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">8. Oikeutesi</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            GDPR:n mukaan sinulla on seuraavat oikeudet henkilötietojesi suhteen:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>Tarkastusoikeus:</strong> Oikeus saada tieto käsiteltävistä henkilötiedoista</li>
+                            <li><strong>Oikaiseminen:</strong> Oikeus korjata virheelliset tai puutteelliset tiedot</li>
+                            <li><strong>Poistaminen:</strong> Oikeus pyytää tietojen poistamista tietyissä tilanteissa</li>
+                            <li><strong>Käsittelyn rajoittaminen:</strong> Oikeus rajoittaa tietojen käsittelyä</li>
+                            <li><strong>Siirrettävyys:</strong> Oikeus saada tiedot koneluettavassa muodossa</li>
+                            <li><strong>Vastustaminen:</strong> Oikeus vastustaa tietojen käsittelyä</li>
+                            <li><strong>Suostumuksen peruuttaminen:</strong> Oikeus peruuttaa antamasi suostumus</li>
+                        </ul>
+                        
+                        <p class="text-gray-300 leading-relaxed mt-4">
+                            Voit käyttää oikeuksiasi ottamalla yhteyttä asiakaspalveluumme. Vastaamme pyyntöihisi 30 päivän kuluessa.
+                        </p>
+                    </div>
+
+                    <!-- Cookies -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">9. Evästeet</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Käytämme evästeitä parantaaksemme käyttökokemustasi ja analysoidaksemme sivuston käyttöä:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong>Välttämättömät evästeet:</strong> Sivuston toiminnan kannalta välttämättömät</li>
+                            <li><strong>Suorituskykyevästeet:</strong> Sivuston käytön analysointi</li>
+                            <li><strong>Toiminnalliset evästeet:</strong> Käyttäjäkokemus ja asetukset</li>
+                            <li><strong>Markkinointievästeet:</strong> Kohdistettu mainonta (suostumuksella)</li>
+                        </ul>
+                        
+                        <p class="text-gray-300 leading-relaxed mt-4">
+                            Voit hallita evästeasetuksiasi selaimesi kautta tai sivustomme evästeasetuksista.
+                        </p>
+                    </div>
+
+                    <!-- International Transfers -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">10. Kansainväliset Tiedonsiirrot</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Jotkin palveluntarjoajamme voivat sijaita EU:n ulkopuolella. Varmistamme, että kaikki tiedonsiirrot tapahtuvat asianmukaisilla suojatoimilla:
+                        </p>
+                        
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>EU:n komission riittävyyspäätökset</li>
+                            <li>Vakiosopimuslausekkeet (SCC)</li>
+                            <li>Sertifiointijärjestelmät</li>
+                            <li>Sitovat yrityssäännöt (BCR)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Changes -->
+                    <div class="bonus-review-card mb-8">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">11. Muutokset Tietosuojakäytäntöön</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            Voimme päivittää tätä tietosuojakäytäntöä ajoittain. Merkittävistä muutoksista ilmoitamme sinulle sähköpostitse tai sivustomme kautta. Suosittelemme tarkistamaan tämän käytännön säännöllisesti.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mt-4">
+                            Viimeisin päivitys: 1.1.2024
+                        </p>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="bonus-review-card">
+                        <h2 class="text-2xl font-bold mb-4 text-casino-light">12. Yhteystiedot</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Jos sinulla on kysymyksiä tietosuojakäytännöstämme tai haluat käyttää oikeuksiasi, ota yhteyttä:
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="font-semibold mb-2 text-casino-light">Tietosuojavastaava:</h3>
+                                <p class="text-gray-300">privacy@speedyspins.fi</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-2 text-casino-light">Asiakaspalvelu:</h3>
+                                <p class="text-gray-300">support@speedyspins.fi</p>
+                                <p class="text-gray-300">+358 9 123 4567</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 leading-relaxed mt-6">
+                            Sinulla on myös oikeus tehdä valitus tietosuojaviranomaiselle, jos katsot että henkilötietojesi käsittely rikkoo tietosuojalainsäädäntöä.
+                        </p>
+                        
+                        <div class="text-center mt-8">
+                            <p class="text-lg text-gray-300">
+                                Palaa takaisin <a href="/" class="text-casino-light hover:underline">Speedy Spins Casino</a> etusivulle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-casino-dark py-12 border-t border-casino-blue/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-casino-light">Slotit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Jackpotit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/responsible-gaming" class="hover:text-casino-light">Tietosuojakäytäntö</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-casino-light">Vastuullinen pelaaminen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>Peluuri: 0800 100 101</li>
+                        <li><i class="fas fa-globe mr-2"></i>peluuri.fi</li>
+                        <li><a href="#" class="hover:text-casino-light">Itsesulku</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pelirajoitukset</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-casino-blue/30 pt-8 text-center text-gray-400">
+                <p class="mb-4">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-400"></i>
+                    Uhkapelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Tarkista onko uhkapelaaminen laillista alueellasi. 18+
+                </p>
+                <p class="mb-4">
+                    Kuinka kirjautua sisään: Klikkaa "Pelaa Nyt" -nappia ja luo tili tai kirjaudu sisään olemassa olevilla tunnuksillasi.
+                </p>
+                <p>&copy; 2024 Speedy Spins Casino. Kaikki oikeudet pidätetään. | Anjouan Gaming License #8048/JAZ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

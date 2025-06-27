@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonukset ja Kampanjat - Speedy Spins Casino</title>
+    <meta name="description" content="Speedy Spins Casino bonukset: 150% tervetuliaisbonukset, viikoittaiset reload-bonukset, cashback ja ilmaiskierrokset. Lunasta bonuksesi tänään!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-blue': '#1e40af',
+                        'casino-dark': '#0f172a',
+                        'casino-light': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" style="top: 10%; left: 5%;">💥</div>
+        <div class="floating-emoji" style="top: 20%; right: 10%;">🎯</div>
+        <div class="floating-emoji" style="top: 60%; left: 8%;">💸</div>
+        <div class="floating-emoji" style="top: 80%; right: 15%;">€</div>
+        <div class="floating-emoji" style="top: 40%; left: 90%;">🚀</div>
+        <div class="floating-emoji" style="top: 70%; left: 3%;">⭐</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-4 left-4 right-4 z-50 bg-black/80 backdrop-blur-lg rounded-2xl border border-casino-blue/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#hero" class="nav-link">Koti</a>
+                    <a href="/#games" class="nav-link">Pelit</a>
+                    <a href="/protomotions" class="nav-link">Bonukset</a>
+                    <a href="/#about" class="nav-link">Tietoa</a>
+                    <a href="/faq" class="nav-link">FAQ</a>
+                </div>
+                <button onclick="redirectToDeposit()" class="cta-button">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="hero-title mb-6">Bonukset ja Kampanjat</h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Tutustu kaikkiin Speedy Spins Casinon uskomattomiin bonuksiin ja kampanjoihin. Maksimoi voittosi parhailla tarjouksilla!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Bonus Package -->
+        <section class="py-20 bg-casino-dark/30">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Tervetuliaispaketti</h2>
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
+                        <div>
+                            <img src="images/bonus.png" alt="Tervetuliaisbonukset" class="w-full rounded-2xl shadow-2xl">
+                        </div>
+                        <div>
+                            <div class="bonus-box mb-8">
+                                <div class="text-sm text-casino-light mb-2">TERVETULIAISPAKETTI</div>
+                                <div class="text-4xl md:text-5xl font-bold mb-2">150%</div>
+                                <div class="text-xl mb-2">€7,500 asti</div>
+                                <div class="text-casino-light">+ 200 Ilmaiskierrosta</div>
+                                <div class="text-sm mt-2">Moon Princess peliin</div>
+                            </div>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-casino-light mr-3"></i>
+                                    <span>Minimitalletussumma: €20</span>
+                                </div>
+                                <div class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-casino-light mr-3"></i>
+                                    <span>Kierrätysvaatimus: 35x (bonus + talletus)</span>
+                                </div>
+                                <div class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-casino-light mr-3"></i>
+                                    <span>Ilmaiskierrosten arvo: €0.20 per kierros</span>
+                                </div>
+                                <div class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-casino-light mr-3"></i>
+                                    <span>Bonus voimassa 30 päivää</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <button onclick="redirectToDeposit()" class="cta-button-large">
+                                    <i class="fas fa-gift mr-2"></i>Lunasta Bonus
+                                </button>
+                                <button onclick="redirectToDeposit()" class="cta-button-secondary">
+                                    <i class="fas fa-info-circle mr-2"></i>Lue Ehdot
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Welcome Bonus Breakdown -->
+                    <div class="bonus-review-card">
+                        <h3 class="text-2xl font-bold mb-6 text-casino-light text-center">Tervetuliaispaketin Yksityiskohdat</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border border-casino-blue/30 rounded-lg overflow-hidden">
+                                <thead class="bg-casino-blue/20">
+                                    <tr>
+                                        <th class="p-4 text-left">Talletus</th>
+                                        <th class="p-4 text-left">Bonus %</th>
+                                        <th class="p-4 text-left">Maksimi Bonus</th>
+                                        <th class="p-4 text-left">Ilmaiskierrokset</th>
+                                        <th class="p-4 text-left">Peli</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-casino-blue/20">
+                                        <td class="p-4 font-semibold">1. Talletus</td>
+                                        <td class="p-4">150%</td>
+                                        <td class="p-4">€7,500</td>
+                                        <td class="p-4">200 kpl</td>
+                                        <td class="p-4">Moon Princess</td>
+                                    </tr>
+                                    <tr class="border-t border-casino-blue/20">
+                                        <td class="p-4 font-semibold">2. Talletus</td>
+                                        <td class="p-4">75%</td>
+                                        <td class="p-4">€2,500</td>
+                                        <td class="p-4">100 kpl</td>
+                                        <td class="p-4">Book of Dead</td>
+                                    </tr>
+                                    <tr class="border-t border-casino-blue/20">
+                                        <td class="p-4 font-semibold">3. Talletus</td>
+                                        <td class="p-4">50%</td>
+                                        <td class="p-4">€1,500</td>
+                                        <td class="p-4">50 kpl</td>
+                                        <td class="p-4">Sweet Bonanza</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Reload -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Viikoittainen Reload-bonus</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="promo-card text-center">
+                        <i class="fas fa-sync-alt text-6xl text-casino-light mb-6"></i>
+                        <h3 class="text-3xl font-bold mb-4">Maanantai Reload</h3>
+                        <div class="text-5xl font-bold text-casino-light mb-4">50%</div>
+                        <div class="text-xl mb-6">€500 asti + 50 Ilmaiskierrosta</div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-8 text-left">
+                            <div>
+                                <h4 class="font-semibold mb-3 text-casino-light">Bonuksen Ehdot:</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• Minimitalletussumma: €30</li>
+                                    <li>• Kierrätysvaatimus: 30x</li>
+                                    <li>• Voimassa maanantaisin</li>
+                                    <li>• Bonus koodi: MONDAY50</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-3 text-casino-light">Ilmaiskierrokset:</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• 50 kierrosta Starburst peliin</li>
+                                    <li>• Kierrosten arvo: €0.10</li>
+                                    <li>• Kierrätysvaatimus: 35x</li>
+                                    <li>• Voimassa 7 päivää</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <button onclick="redirectToDeposit()" class="cta-button-large">
+                            <i class="fas fa-calendar-week mr-2"></i>Lunasta Maanantai-bonus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekend Reload + Free Spins -->
+        <section class="py-20 bg-casino-dark/30">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Viikonloppu Reload + Ilmaiskierrokset</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <div class="promo-card">
+                        <i class="fas fa-calendar-alt text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Perjantai Power-up</h3>
+                        <div class="text-3xl font-bold text-casino-light mb-2">75%</div>
+                        <div class="text-lg mb-4">€1,000 asti</div>
+                        
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li>• Minimitalletussumma: €25</li>
+                            <li>• Kierrätysvaatimus: 35x</li>
+                            <li>• Bonus koodi: FRIDAY75</li>
+                            <li>• Voimassa perjantaisin 18:00-23:59</li>
+                        </ul>
+                        
+                        <button onclick="redirectToDeposit()" class="cta-button">
+                            <i class="fas fa-rocket mr-2"></i>Lunasta
+                        </button>
+                    </div>
+
+                    <div class="promo-card">
+                        <i class="fas fa-sun text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Lauantai Spins</h3>
+                        <div class="text-3xl font-bold text-casino-light mb-2">100</div>
+                        <div class="text-lg mb-4">Ilmaiskierrosta</div>
+                        
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li>• Minimitalletussumma: €20</li>
+                            <li>• Kierrosten arvo: €0.20</li>
+                            <li>• Peli: Gonzo's Quest</li>
+                            <li>• Kierrätysvaatimus: 40x</li>
+                        </ul>
+                        
+                        <button onclick="redirectToDeposit()" class="cta-button">
+                            <i class="fas fa-play mr-2"></i>Lunasta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Cashback -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Viikoittainen Cashback</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="promo-card text-center">
+                        <i class="fas fa-hand-holding-usd text-6xl text-casino-light mb-6"></i>
+                        <h3 class="text-3xl font-bold mb-4">Sunnuntai Cashback</h3>
+                        <div class="text-5xl font-bold text-casino-light mb-4">15%</div>
+                        <div class="text-xl mb-6">Tappioistasi takaisin - €500 asti</div>
+                        
+                        <div class="grid md:grid-cols-3 gap-6 mb-8">
+                            <div class="step-card">
+                                <div class="step-icon">
+                                    <i class="fas fa-calendar"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Maanantai-Sunnuntai</h4>
+                                <p class="text-gray-300 text-sm">Pelaa normaalisti koko viikon</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Automaattinen Laskenta</h4>
+                                <p class="text-gray-300 text-sm">Laskemme tappiot automaattisesti</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">Maanantai Hyvitys</h4>
+                                <p class="text-gray-300 text-sm">15% tappioista takaisin tilillesi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-casino-blue/10 rounded-lg p-6 mb-6">
+                            <h4 class="font-semibold mb-3 text-casino-light">Cashback Ehdot:</h4>
+                            <ul class="text-gray-300 space-y-1 text-sm">
+                                <li>• Minimihävikki: €50</li>
+                                <li>• Maksimi cashback: €500</li>
+                                <li>• Kierrätysvaatimus: 1x</li>
+                                <li>• Hyvitetään maanantaisin klo 12:00</li>
+                                <li>• Ei bonus koodi tarvita</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="text-gray-300 mb-6">
+                            Cashback lasketaan viikoittain ja hyvitetään automaattisesti. Ei kierrätysvaatimuksia!
+                        </p>
+                        
+                        <button onclick="redirectToDeposit()" class="cta-button-large">
+                            <i class="fas fa-piggy-bank mr-2"></i>Aloita Pelaaminen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Monthly Bonus Calendar -->
+        <section class="py-20 bg-casino-dark/30">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Kuukausittainen Bonuskalenteri</h2>
+                <div class="max-w-6xl mx-auto">
+                    <p class="text-center text-xl text-gray-300 mb-12">
+                        Joka kuukausi uusia yllätyksiä! Tarkista päivittäin mitä bonuksia on tarjolla.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-12">
+                        <!-- Week 1 -->
+                        <div class="calendar-day active">
+                            <div class="day-number">1</div>
+                            <div class="day-bonus">20 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">2</div>
+                            <div class="day-bonus">25% Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">3</div>
+                            <div class="day-bonus">30 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">4</div>
+                            <div class="day-bonus">€10 Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">5</div>
+                            <div class="day-bonus">50% Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">6</div>
+                            <div class="day-bonus">75 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">7</div>
+                            <div class="day-bonus">Cashback</div>
+                        </div>
+                        
+                        <!-- Week 2 -->
+                        <div class="calendar-day">
+                            <div class="day-number">8</div>
+                            <div class="day-bonus">40 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">9</div>
+                            <div class="day-bonus">35% Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">10</div>
+                            <div class="day-bonus">€15 Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">11</div>
+                            <div class="day-bonus">60 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">12</div>
+                            <div class="day-bonus">75% Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">13</div>
+                            <div class="day-bonus">100 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">14</div>
+                            <div class="day-bonus">Turnaus</div>
+                        </div>
+                        
+                        <!-- Week 3 -->
+                        <div class="calendar-day">
+                            <div class="day-number">15</div>
+                            <div class="day-bonus">€20 Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">16</div>
+                            <div class="day-bonus">50 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">17</div>
+                            <div class="day-bonus">100% Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">18</div>
+                            <div class="day-bonus">80 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">19</div>
+                            <div class="day-bonus">€25 Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">20</div>
+                            <div class="day-bonus">125 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">21</div>
+                            <div class="day-bonus">Cashback</div>
+                        </div>
+                        
+                        <!-- Week 4 -->
+                        <div class="calendar-day">
+                            <div class="day-number">22</div>
+                            <div class="day-bonus">90 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">23</div>
+                            <div class="day-bonus">€30 Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">24</div>
+                            <div class="day-bonus">150 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">25</div>
+                            <div class="day-bonus">125% Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">26</div>
+                            <div class="day-bonus">€50 Bonus</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">27</div>
+                            <div class="day-bonus">200 FS</div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="day-number">28</div>
+                            <div class="day-bonus">Mega Bonus</div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <p class="text-lg text-gray-300 mb-6">
+                            Kirjaudu sisään päivittäin ja lunasta päivän bonus! Bonukset ovat voimassa vain kyseisen päivän ajan.
+                        </p>
+                        <button onclick="redirectToDeposit()" class="cta-button-large">
+                            <i class="fas fa-calendar-check mr-2"></i>Tarkista Tämän Päivän Bonus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus Terms -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Bonusehdot</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bonus-review-card">
+                        <h3 class="text-xl font-bold mb-4 text-casino-light">Yleiset Bonusehdot</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <p>
+                                Kaikki <a href="/" class="text-casino-light hover:underline">Speedy Spins Casino</a> bonukset ovat voimassa vain rekisteröityneille pelaajille, jotka ovat täyttäneet 18 vuotta.
+                            </p>
+                            
+                            <h4 class="font-semibold text-casino-light">Kierrätysvaatimukset:</h4>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Bonusrahat tulee kierrättää määrätyn määrän ennen kotiutusta</li>
+                                <li>Kierrätysvaatimus lasketaan bonuksen ja talletuksen summasta</li>
+                                <li>Eri pelit vaikuttavat kierrätykseen eri tavoin</li>
+                                <li>Slotit: 100%, Pöytäpelit: 10%, Live Casino: 10%</li>
+                            </ul>
+                            
+                            <h4 class="font-semibold text-casino-light">Maksimi panokset:</h4>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Maksimi panos bonusrahalla: €5 per kierros/käsi</li>
+                                <li>Maksimi panos ilmaiskierroksilla: €0.50 per kierros</li>
+                                <li>Suuremmat panokset voivat mitätöidä bonuksen</li>
+                            </ul>
+                            
+                            <h4 class="font-semibold text-casino-light">Voimassaoloajat:</h4>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Bonukset ovat voimassa 30 päivää aktivoinnista</li>
+                                <li>Ilmaiskierrokset 7 päivää hyvityksestä</li>
+                                <li>Cashback-bonukset 14 päivää hyvityksestä</li>
+                            </ul>
+                            
+                            <h4 class="font-semibold text-casino-light">Rajoitetut pelit:</h4>
+                            <p>
+                                Seuraavat pelit eivät ole sallittuja bonusrahalla: 1429 Uncharted Seas, Blood Suckers, Dead or Alive, Devils Delight, Kings of Chicago, Pearls of India, Scrooge, Secret of the Stones, The Wish Master, Tomb Raider.
+                            </p>
+                            
+                            <h4 class="font-semibold text-casino-light">Muut ehdot:</h4>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Vain yksi bonus per pelaaja, IP-osoite ja kotitalous</li>
+                                <li>Bonukset eivät ole siirrettävissä</li>
+                                <li>Pidätämme oikeuden peruuttaa bonuksen väärinkäytön yhteydessä</li>
+                                <li>Täydelliset ehdot löytyvät sivustomme alaosasta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-casino-dark py-12 border-t border-casino-blue/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-casino-light">Slotit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Jackpotit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/responsible-gaming" class="hover:text-casino-light">Tietosuojakäytäntö</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-casino-light">Vastuullinen pelaaminen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>Peluuri: 0800 100 101</li>
+                        <li><i class="fas fa-globe mr-2"></i>peluuri.fi</li>
+                        <li><a href="#" class="hover:text-casino-light">Itsesulku</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pelirajoitukset</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-casino-blue/30 pt-8 text-center text-gray-400">
+                <p class="mb-4">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-400"></i>
+                    Uhkapelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Tarkista onko uhkapelaaminen laillista alueellasi. 18+
+                </p>
+                <p class="mb-4">
+                    Kuinka kirjautua sisään: Klikkaa "Pelaa Nyt" -nappia ja luo tili tai kirjaudu sisään olemassa olevilla tunnuksillasi.
+                </p>
+                <p>&copy; 2024 Speedy Spins Casino. Kaikki oikeudet pidätetään. | Anjouan Gaming License #8048/JAZ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .calendar-day {
+            background: rgba(30, 64, 175, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .calendar-day:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+        }
+        
+        .calendar-day.active {
+            background: rgba(59, 130, 246, 0.2);
+            border-color: #3b82f6;
+        }
+        
+        .day-number {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 0.25rem;
+        }
+        
+        .day-bonus {
+            font-size: 0.75rem;
+            color: #d1d5db;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .calendar-day {
+                min-height: 60px;
+                padding: 0.75rem;
+            }
+            
+            .day-number {
+                font-size: 1rem;
+            }
+            
+            .day-bonus {
+                font-size: 0.625rem;
+            }
+        }
+    </style>
+</body>
+</html>

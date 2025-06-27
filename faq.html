@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usein Kysytyt Kysymykset - Speedy Spins Casino</title>
+    <meta name="description" content="Vastaukset yleisimpiin kysymyksiin Speedy Spins Casinosta. Kotiutukset, henkilöllisyyden varmistus, mobiilipeli ja lisenssi.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-blue': '#1e40af',
+                        'casino-dark': '#0f172a',
+                        'casino-light': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" style="top: 10%; left: 5%;">💥</div>
+        <div class="floating-emoji" style="top: 20%; right: 10%;">🎯</div>
+        <div class="floating-emoji" style="top: 60%; left: 8%;">💸</div>
+        <div class="floating-emoji" style="top: 80%; right: 15%;">€</div>
+        <div class="floating-emoji" style="top: 40%; left: 90%;">🚀</div>
+        <div class="floating-emoji" style="top: 70%; left: 3%;">⭐</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-4 left-4 right-4 z-50 bg-black/80 backdrop-blur-lg rounded-2xl border border-casino-blue/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#hero" class="nav-link">Koti</a>
+                    <a href="/#games" class="nav-link">Pelit</a>
+                    <a href="/protomotions" class="nav-link">Bonukset</a>
+                    <a href="/#about" class="nav-link">Tietoa</a>
+                    <a href="/faq" class="nav-link">FAQ</a>
+                </div>
+                <button onclick="redirectToDeposit()" class="cta-button">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="hero-title mb-6">Usein Kysytyt Kysymykset</h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Löydä vastaukset yleisimpiin kysymyksiin Speedy Spins Casinosta. Jos et löydä vastausta, ota yhteyttä asiakaspalveluumme.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <!-- General Questions -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-8 text-casino-light text-center">Yleiset Kysymykset</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Onko Speedy Spins Casino turvallinen suomalaisille pelaajille?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Kyllä, Speedy Spins Casino toimii Anjouan Gaming -lisenssin alaisuudessa (lisenssi #8048/JAZ). Vaikka emme ole Suomen Veikkauksen alaisia, noudatamme kansainvälisiä turvallisuusstandardeja ja käytämme SSL-salausta kaikkien tietojen suojaamiseksi. Suomalaiset pelaajat voivat pelata turvallisesti sivustollamme.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Miksi Speedy Spins ei ole lisensoitu Suomessa?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Toimimme kansainvälisen Anjouan Gaming -lisenssin alaisuudessa, mikä mahdollistaa laajemman pelivalikoiman ja paremmat bonukset kuin Suomen monopolijärjestelmä. Tämä on täysin laillista suomalaisille pelaajille, ja voitot ovat veronalaisia Suomessa normaalisti.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Onko teillä mobiilisovellus?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Meillä ei ole erillistä mobiilisovellusta, mutta sivustomme on täysin optimoitu mobiililaitteille. Voit pelata kaikkia pelejämme suoraan selaimessa iOS- ja Android-laitteilla. Mobiiliversio tarjoaa saman käyttökokemuksen kuin tietokoneella.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account & Registration -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-8 text-casino-light text-center">Tili ja Rekisteröityminen</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Kuinka luon tilin?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Klikkaa "Pelaa Nyt" -nappia sivustomme yläosassa. Täytä rekisteröintilomake henkilötiedoillasi (nimi, sähköposti, syntymäaika, osoite). Vahvista sähköpostiosoitteesi ja voit aloittaa pelaamisen välittömästi. Rekisteröityminen kestää alle 2 minuuttia.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Mitä henkilöllisyyden varmistus (KYC) tarkoittaa?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>KYC (Know Your Customer) on lakisääteinen prosessi, jossa varmistamme henkilöllisyytesi. Tarvitsemme kopion henkilötodistuksesta tai passista sekä osoitetodistuksen (esim. sähkölasku). KYC vaaditaan yleensä ensimmäisen kotiutuksen yhteydessä. Prosessi kestää 24-48 tuntia.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Voiko samassa taloudessa olla useita tilejä?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Ei, sallimme vain yhden tilin per henkilö, IP-osoite ja kotitalous. Useamman tilin luominen johtaa kaikkien tilien sulkemiseen ja varojen takavarikoitiin. Jos tarvitset apua tilin kanssa, ota yhteyttä asiakaspalveluumme.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payments -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-8 text-casino-light text-center">Maksut ja Kotiutukset</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Kuinka kauan kotiutukset kestävät?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Kotiutusajat riippuvat maksutavasta:<br>
+                                • Pankkisiirto: 1-3 arkipäivää<br>
+                                • Trustly: Välitön - 24 tuntia<br>
+                                • Skrill/Neteller: 0-24 tuntia<br>
+                                • Kryptovaluutat: 0-1 tunti<br>
+                                Ensimmäinen kotiutus voi kestää pidempään KYC-varmistuksen vuoksi.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Mikä on minimitalletussumma?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Minimitalletussumma on €10 useimmilla maksutavoilla. Kryptovaluutoilla minimisumma voi olla hieman korkeampi. Maksimitalletussumma on €5,000 per transaktio, mutta voit tehdä useita talletuksia päivässä.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Onko kotiutuksissa maksuja?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Ensimmäiset 3 kotiutusta kuukaudessa ovat ilmaisia. Sen jälkeen perimme 2% käsittelymaksun (min. €2, max. €50). Pankkisiirroissa pankki voi periä oman maksunsa. Suosittelemme e-lompakoita nopeampiin ja halvempiin kotiutuksiin.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Voinko kotiuttaa eri maksutavalla kuin talletin?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Rahanpesun estämiseksi sinun tulee ensisijaisesti kotiuttaa samalla tavalla kuin talletit. Jos tämä ei ole mahdollista (esim. prepaid-kortti), voit kotiuttaa pankkisiirrolla tai e-lompakolla KYC-varmistuksen jälkeen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bonuses -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-8 text-casino-light text-center">Bonukset</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Kuinka kierrätysvaatimukset toimivat?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Kierrätysvaatimus tarkoittaa, kuinka monta kertaa bonussumma tulee pelata ennen kotiutusta. Esimerkiksi €100 bonus 35x kierrätyksellä vaatii €3,500 pelaamista. Slotit laskevat 100%, pöytäpelit 10% kierrätykseen. Voit seurata kierrätyksen etenemistä tilisi kautta.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Voinko peruuttaa bonuksen?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Kyllä, voit peruuttaa aktiivisen bonuksen milloin tahansa tilisi asetuksista. Bonuksen peruuttaminen poistaa bonusrahat ja mahdolliset bonuksella saadut voitot, mutta omat talletusrahasi säilyvät.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-8 text-casino-light text-center">Tekniset Kysymykset</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Mitä teen jos peli jumittuu?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Jos peli jumittuu, päivitä sivu tai kirjaudu uudelleen sisään. Kaikki vedot ja voitot tallennetaan automaattisesti palvelimelle. Jos ongelma jatkuu, ota yhteyttä asiakaspalveluumme live-chatin kautta. Keskeneräiset pelit ratkaistaan aina pelaajan eduksi.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Mitkä selaimet ovat tuettuja?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Tuemme kaikkia moderneja selaimia: Chrome, Firefox, Safari, Edge ja Opera. Suosittelemme pitämään selaimen ajan tasalla parhaan pelikokemuksen takaamiseksi. Mobiililaitteilla pelit toimivat sekä iOS Safarissa että Android Chromessa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="text-center mt-16">
+                        <div class="bonus-review-card">
+                            <h3 class="text-2xl font-bold mb-4 text-casino-light">Etkö löytänyt vastausta?</h3>
+                            <p class="text-gray-300 mb-6">
+                                Asiakaspalvelumme on käytettävissä 24/7 auttamaan sinua. Ota yhteyttä live-chatin, sähköpostin tai puhelimen kautta.
+                            </p>
+                            
+                            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                                <div class="support-card">
+                                    <i class="fas fa-comments text-3xl text-casino-light mb-3"></i>
+                                    <h4 class="font-bold mb-2">Live Chat</h4>
+                                    <p class="text-gray-300 text-sm">Nopein tapa saada apua</p>
+                                    <p class="text-casino-light font-semibold">24/7 käytettävissä</p>
+                                </div>
+                                
+                                <div class="support-card">
+                                    <i class="fas fa-envelope text-3xl text-casino-light mb-3"></i>
+                                    <h4 class="font-bold mb-2">Sähköposti</h4>
+                                    <p class="text-gray-300 text-sm">support@speedyspins.fi</p>
+                                    <p class="text-casino-light font-semibold">Vastaus 2-4 tunnissa</p>
+                                </div>
+                                
+                                <div class="support-card">
+                                    <i class="fas fa-phone text-3xl text-casino-light mb-3"></i>
+                                    <h4 class="font-bold mb-2">Puhelin</h4>
+                                    <p class="text-gray-300 text-sm">+358 9 123 4567</p>
+                                    <p class="text-casino-light font-semibold">Ma-Su 10:00-22:00</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-lg text-gray-300">
+                                Palaa takaisin <a href="/" class="text-casino-light hover:underline">Speedy Spins Casino</a> etusivulle ja aloita pelaaminen!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-casino-dark py-12 border-t border-casino-blue/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-casino-light">Slotit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Jackpotit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/responsible-gaming" class="hover:text-casino-light">Tietosuojakäytäntö</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-casino-light">Vastuullinen pelaaminen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>Peluuri: 0800 100 101</li>
+                        <li><i class="fas fa-globe mr-2"></i>peluuri.fi</li>
+                        <li><a href="#" class="hover:text-casino-light">Itsesulku</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pelirajoitukset</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-casino-blue/30 pt-8 text-center text-gray-400">
+                <p class="mb-4">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-400"></i>
+                    Uhkapelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Tarkista onko uhkapelaaminen laillista alueellasi. 18+
+                </p>
+                <p class="mb-4">
+                    Kuinka kirjautua sisään: Klikkaa "Pelaa Nyt" -nappia ja luo tili tai kirjaudu sisään olemassa olevilla tunnuksillasi.
+                </p>
+                <p>&copy; 2024 Speedy Spins Casino. Kaikki oikeudet pidätetään. | Anjouan Gaming License #8048/JAZ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

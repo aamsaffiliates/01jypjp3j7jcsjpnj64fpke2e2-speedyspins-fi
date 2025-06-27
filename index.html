@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Spins Casino - 150% Bonus + 200 Ilmaiskierrosta | speedyspins.fi</title>
+    <meta name="description" content="Liity Speedy Spins Casinoon ja saa 150% bonus €7,500 asti + 200 ilmaiskierrosta Moon Princess peliin. Suomen paras nettikasino 2024!">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Speedy Spins Casino - 150% Bonus + 200 Ilmaiskierrosta">
+    <meta property="og:description" content="Liity Speedy Spins Casinoon ja saa 150% bonus €7,500 asti + 200 ilmaiskierrosta Moon Princess peliin.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://speedyspins.fi">
+    <meta property="og:image" content="https://speedyspins.fi/images/hero.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-blue': '#1e40af',
+                        'casino-dark': '#0f172a',
+                        'casino-light': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" style="top: 10%; left: 5%;">💥</div>
+        <div class="floating-emoji" style="top: 20%; right: 10%;">🎯</div>
+        <div class="floating-emoji" style="top: 60%; left: 8%;">💸</div>
+        <div class="floating-emoji" style="top: 80%; right: 15%;">€</div>
+        <div class="floating-emoji" style="top: 40%; left: 90%;">🚀</div>
+        <div class="floating-emoji" style="top: 70%; left: 3%;">⭐</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-4 left-4 right-4 z-50 bg-black/80 backdrop-blur-lg rounded-2xl border border-casino-blue/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="nav-link">Koti</a>
+                    <a href="#games" class="nav-link">Pelit</a>
+                    <a href="/protomotions" class="nav-link">Bonukset</a>
+                    <a href="#about" class="nav-link">Tietoa</a>
+                    <a href="/faq" class="nav-link">FAQ</a>
+                </div>
+                <button onclick="redirectToDeposit()" class="cta-button">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative pt-24">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <!-- Bonus Display Box -->
+                    <div class="bonus-box mb-8">
+                        <div class="text-sm text-casino-light mb-2">TERVETULIAISBbonus</div>
+                        <div class="text-4xl md:text-5xl font-bold mb-2">150%</div>
+                        <div class="text-xl mb-2">€7,500 asti</div>
+                        <div class="text-casino-light">+ 200 Ilmaiskierrosta</div>
+                        <div class="text-sm mt-2">Moon Princess peliin</div>
+                    </div>
+                    
+                    <h1 class="hero-title mb-6">
+                        Speedy Spins Casino - Nopein Tapa Voittaa Suomessa
+                    </h1>
+                    
+                    <p class="text-xl text-gray-300 mb-8">
+                        Koe huipputason kasinoelämys parhailla peleillä ja uskomattomilla bonuksilla. Aloita voittoputkesi tänään!
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="redirectToDeposit()" class="cta-button-large">
+                            <i class="fas fa-rocket mr-2"></i>Aloita Pelaaminen
+                        </button>
+                        <button onclick="redirectToDeposit()" class="cta-button-secondary">
+                            <i class="fas fa-gift mr-2"></i>Lunasta Bonus
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <img src="images/hero.png" alt="Speedy Spins Casino" class="hero-image">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Lights -->
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 bg-casino-dark/50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Kuinka Lunastaa Bonus</h2>
+            <div class="grid md:grid-cols-4 gap-8 mt-12">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Rekisteröidy</h3>
+                    <p class="text-gray-300">Luo tili muutamassa sekunnissa</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Talleta</h3>
+                    <p class="text-gray-300">Tee ensimmäinen talletuksesi</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Saa Bonus</h3>
+                    <p class="text-gray-300">Bonus hyvitetään automaattisesti</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. Pelaa</h3>
+                    <p class="text-gray-300">Aloita pelaaminen ja voittaminen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gringo's Picks -->
+    <section id="games" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Suosituimmat Pelit</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+                <div class="game-card">
+                    <img src="images/book-of-dead.jpg" alt="Book of Dead" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Book of Dead</h3>
+                        <button onclick="redirectToDeposit()" class="play-btn">Pelaa</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/reactoonz-4c88-463d-a206-f49f0d82cc3a.jpg" alt="Reactoonz" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Reactoonz</h3>
+                        <button onclick="redirectToDeposit()" class="play-btn">Pelaa</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/duel-at-dawn.jpg" alt="Duel at Dawn" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Duel at Dawn</h3>
+                        <button onclick="redirectToDeposit()" class="play-btn">Pelaa</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/fist-of-destruction.jpg" alt="Fist Of destruction" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Fist Of destruction</h3>
+                        <button onclick="redirectToDeposit()" class="play-btn">Pelaa</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/hounds-of-hell.jpg" alt="Hounds Of Hell" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Hounds Of Hell</h3>
+                        <button onclick="redirectToDeposit()" class="play-btn">Pelaa</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/gates-of-olympus.jpg" alt="Gates of Olympus" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Gates of Olympus Superscatter</h3>
+                        <button onclick="redirectToDeposit()" class="play-btn">Pelaa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Portfolio -->
+    <section class="py-20 bg-casino-dark/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Pelivalikoima</h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
+                <div class="stat-card">
+                    <i class="fas fa-bolt text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">247</div>
+                    <div class="text-casino-light">Megaways Slotit</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-gem text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">156</div>
+                    <div class="text-casino-light">Cluster Pays</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-spade text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">89</div>
+                    <div class="text-casino-light">Pöytäpelit</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">34</div>
+                    <div class="text-casino-light">Crash Pelit</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-video text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">127</div>
+                    <div class="text-casino-light">Live Dealer</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">23</div>
+                    <div class="text-casino-light">Jackpotit</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-flag text-4xl text-casino-light mb-4"></i>
+                    <div class="text-3xl font-bold">67</div>
+                    <div class="text-casino-light">Suomi Eksklusiivit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Tietoa Speedy Spins Casinosta</h2>
+            <div class="max-w-4xl mx-auto text-lg text-gray-300 leading-relaxed">
+                <p class="mb-6">
+                    Speedy Spins Casino on Suomen johtava nettikasino, joka tarjoaa pelaajille huippuluokan kasinoelämyksen. Kasino on perustettu vuonna 2023 ja se on nopeasti noussut suomalaisten pelaajien suosikiksi tarjoamalla laajan valikoiman pelejä, kilpailukykyisiä bonuksia ja erinomaista asiakaspalvelua.
+                </p>
+                <p class="mb-6">
+                    Pelivalikoima sisältää yli 2000 peliä maailman parhaimmilta pelintarjoajilta. Slottipelit ovat kasinon vahvuus, mutta tarjolla on myös kattava valikoima pöytäpelejä, live-kasinopelejä ja erikoispelejä. Kaikki pelit on optimoitu toimimaan saumattomasti sekä tietokoneella että mobiililaitteilla.
+                </p>
+                <p class="mb-6">
+                    Turvallisuus ja luotettavuus ovat Speedy Spins Casinon kulmakiviä. Kasino toimii Anjouan Gaming -lisenssin alaisuudessa ja käyttää alan parhaita turvallisuusteknologioita pelaajien tietojen ja varojen suojaamiseksi. Kaikki maksutapahtumat on suojattu SSL-salauksella ja pelit käyttävät satunnaislukugeneraattoria reilun pelaamisen varmistamiseksi.
+                </p>
+                <p class="mb-6">
+                    Asiakaspalvelu on saatavilla suomeksi ympäri vuorokauden live-chatin, sähköpostin ja puhelimen kautta. Kasino tarjoaa myös kattavan VIP-ohjelman, joka palkitsee uskollisia pelaajia eksklusiivisilla bonuksilla, henkilökohtaisella palvelulla ja nopeammilla kotiutuksilla.
+                </p>
+                <p>
+                    Vastuullinen pelaaminen on Speedy Spins Casinolle tärkeää, ja kasino tarjoaa pelaajille työkaluja pelaamisen hallintaan, kuten talletusrajat, peliaika-rajoitukset ja itsesulkumahdollisuuden. Kasino tekee yhteistyötä Peluuri ry:n kanssa ongelmapelaamisen ehkäisemiseksi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-20 bg-casino-dark/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Pelintarjoajat</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-12">
+                <div class="provider-card">NetEnt</div>
+                <div class="provider-card">Microgaming</div>
+                <div class="provider-card">Play'n GO</div>
+                <div class="provider-card">Pragmatic Play</div>
+                <div class="provider-card">Evolution Gaming</div>
+                <div class="provider-card">Yggdrasil</div>
+                <div class="provider-card">Big Time Gaming</div>
+                <div class="provider-card">Red Tiger</div>
+                <div class="provider-card">Quickspin</div>
+                <div class="provider-card">Thunderkick</div>
+                <div class="provider-card">Push Gaming</div>
+                <div class="provider-card">Nolimit City</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Maksutavat</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="payment-table">
+                        <h3 class="text-xl font-bold mb-4 text-casino-light">Talletukset</h3>
+                        <table class="w-full">
+                            <tr>
+                                <td class="py-2">Danske Bank</td>
+                                <td class="py-2 text-right">Välitön</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Nordea</td>
+                                <td class="py-2 text-right">Välitön</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">OP Pankki</td>
+                                <td class="py-2 text-right">Välitön</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Säästöpankki</td>
+                                <td class="py-2 text-right">Välitön</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Visa/Mastercard</td>
+                                <td class="py-2 text-right">Välitön</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="payment-table">
+                        <h3 class="text-xl font-bold mb-4 text-casino-light">Kotiutukset</h3>
+                        <table class="w-full">
+                            <tr>
+                                <td class="py-2">Pankkisiirto</td>
+                                <td class="py-2 text-right">1-3 päivää</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Trustly</td>
+                                <td class="py-2 text-right">Välitön</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Skrill</td>
+                                <td class="py-2 text-right">24h</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Neteller</td>
+                                <td class="py-2 text-right">24h</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">MuchBetter</td>
+                                <td class="py-2 text-right">24h</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="text-gray-300 leading-relaxed">
+                    <p class="mb-4">
+                        Speedy Spins Casino tarjoaa laajan valikoiman turvallisia ja luotettavia maksutapoja suomalaisille pelaajille. Kaikki suomalaiset pankit ovat tuettuna, mikä mahdollistaa nopeat ja turvalliset talletukset suoraan verkkopankista. Talletukset käsitellään välittömästi, joten pääset pelaamaan heti.
+                    </p>
+                    <p class="mb-4">
+                        Kotiutukset käsitellään nopeasti ja tehokkaasti. Trustly-kotiutukset ovat välittömiä, kun taas pankkisiirrot kestävät 1-3 arkipäivää. VIP-pelaajat nauttivat priorisoidusta käsittelystä ja korkeammista kotiutusrajoista. Kaikki maksutapahtumat on suojattu 256-bittisellä SSL-salauksella.
+                    </p>
+                    <p>
+                        Kasino ei veloita maksuja talletuksista tai kotiutuksista. Minimitalletussumma on €10 ja maksimikotiutus on €5,000 per päivä tavallisille pelaajille. VIP-pelaajille tarjotaan korkeampia rajoja henkilökohtaisten tarpeiden mukaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-20 bg-casino-dark/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Turvallisuus & VIP-ohjelma</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-6 mb-12">
+                    <div class="vip-level">
+                        <i class="fas fa-star text-2xl text-yellow-400 mb-2"></i>
+                        <h3 class="font-bold">Bronze</h3>
+                        <p class="text-sm text-gray-400">Aloittelija</p>
+                    </div>
+                    <div class="vip-level">
+                        <i class="fas fa-star text-2xl text-gray-400 mb-2"></i>
+                        <h3 class="font-bold">Silver</h3>
+                        <p class="text-sm text-gray-400">Kokenut</p>
+                    </div>
+                    <div class="vip-level">
+                        <i class="fas fa-star text-2xl text-yellow-600 mb-2"></i>
+                        <h3 class="font-bold">Gold</h3>
+                        <p class="text-sm text-gray-400">Ammattilainen</p>
+                    </div>
+                    <div class="vip-level">
+                        <i class="fas fa-crown text-2xl text-purple-400 mb-2"></i>
+                        <h3 class="font-bold">Diamond</h3>
+                        <p class="text-sm text-gray-400">Eliitti</p>
+                    </div>
+                </div>
+                <div class="text-gray-300 leading-relaxed">
+                    <p class="mb-4">
+                        Speedy Spins Casino ottaa turvallisuuden vakavasti ja käyttää alan parhaita turvallisuusteknologioita. Kasino toimii Anjouan Gaming -lisenssin alaisuudessa, joka varmistaa reilun pelaamisen ja pelaajien oikeuksien suojan. Kaikki pelit käyttävät sertifioituja satunnaislukugeneraattoreita (RNG) ja niitä auditoidaan säännöllisesti riippumattomien tahojen toimesta.
+                    </p>
+                    <p class="mb-4">
+                        VIP-ohjelma palkitsee uskollisia pelaajia neljällä eri tasolla. Jokainen taso tarjoaa eksklusiivisia etuja, kuten henkilökohtaisen VIP-managerin, nopeammat kotiutukset, korkeammat bonukset ja kutsut erikoistapahtumiin. VIP-pisteitä kertyy jokaisesta pelatusta eurosta, ja ne voidaan vaihtaa bonusrahaksi.
+                    </p>
+                    <p class="mb-4">
+                        Diamond-tason VIP-pelaajat nauttivat korkeimmista eduista, mukaan lukien räätälöidyt bonukset, prioriteettiasiakaspalvelu ja eksklusiiviset turnaukset. VIP-manageri on käytettävissä 24/7 henkilökohtaisten tarpeiden hoitamiseksi.
+                    </p>
+                    <p>
+                        Kaikki henkilötiedot ja maksutiedot säilytetään turvallisesti 256-bittisellä SSL-salauksella suojatuilla palvelimilla. Kasino noudattaa GDPR-säädöksiä ja ei koskaan jaa pelaajien tietoja kolmansille osapuolille ilman lupaa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Bonukset ja Tarjoukset</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bonus-review-card mb-8">
+                    <h3 class="text-2xl font-bold mb-4 text-casino-light">Tervetuliaisbonukset</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-300">
+                        <li>150% bonus ensimmäisestä talletuksesta €7,500 asti</li>
+                        <li>200 ilmaiskierrosta Moon Princess -peliin</li>
+                        <li>Minimitalletussumma bonukselle: €20</li>
+                        <li>Kierrätysvaatimus: 35x (bonus + talletus)</li>
+                        <li>Ilmaiskierrosten arvo: €0.20 per kierros</li>
+                        <li>Bonus voimassa 30 päivää aktivoinnista</li>
+                    </ul>
+                    
+                    <table class="w-full mb-6 border border-casino-blue/30 rounded-lg overflow-hidden">
+                        <thead class="bg-casino-blue/20">
+                            <tr>
+                                <th class="p-3 text-left">Talletus</th>
+                                <th class="p-3 text-left">Bonus</th>
+                                <th class="p-3 text-left">Maksimi</th>
+                                <th class="p-3 text-left">Ilmaiskierrokset</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-casino-blue/20">
+                                <td class="p-3">1. talletus</td>
+                                <td class="p-3">150%</td>
+                                <td class="p-3">€7,500</td>
+                                <td class="p-3">200 kpl</td>
+                            </tr>
+                            <tr class="border-t border-casino-blue/20">
+                                <td class="p-3">2. talletus</td>
+                                <td class="p-3">75%</td>
+                                <td class="p-3">€2,500</td>
+                                <td class="p-3">100 kpl</td>
+                            </tr>
+                            <tr class="border-t border-casino-blue/20">
+                                <td class="p-3">3. talletus</td>
+                                <td class="p-3">50%</td>
+                                <td class="p-3">€1,500</td>
+                                <td class="p-3">50 kpl</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-gray-300 leading-relaxed">
+                    <p class="mb-4">
+                        Speedy Spins Casino tarjoaa markkinoiden kilpailukykyisimmät bonukset suomalaisille pelaajille. Tervetuliaispaketti on erityisen antelias, tarjoten pelaajille mahdollisuuden kolminkertaistaa ensimmäinen talletuksensa ja saada satoja ilmaiskierroksia suosituimpiin slottipeleihin.
+                    </p>
+                    <p class="mb-4">
+                        Viikoittaiset kampanjat pitävät pelaamisen mielenkiintoisena. Maanantaisin on Reload Monday -bonus, keskiviikkoisin ilmaiskierroksia ja perjantaisin cashback-tarjous. Viikonloppuisin järjestetään säännöllisesti turnauksia, joissa on jaossa tuhansia euroja palkintoja.
+                    </p>
+                    <p class="mb-4">
+                        Kanta-asiakasohjelma palkitsee jokaista pelattua euroa pisteillä, jotka voidaan vaihtaa bonusrahaksi. Mitä enemmän pelaat, sitä parempia bonuksia saat. VIP-pelaajat saavat eksklusiivisia bonuksia, jotka eivät ole tavallisten pelaajien saatavilla.
+                    </p>
+                    <p>
+                        Kaikki bonukset tulevat selkeillä ehdoilla ja kohtuullisilla kierrätysvaatimuksilla. Kasino on sitoutunut läpinäkyvyyteen, ja kaikki bonusehdot löytyvät helposti sivustolta. Asiakaspalvelu auttaa mielellään bonuksiin liittyvissä kysymyksissä.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20 bg-casino-dark/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Asiakaspalvelu</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="support-card">
+                    <i class="fas fa-comments text-4xl text-casino-light mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Live Chat</h3>
+                    <p class="text-gray-300 mb-4">Välitön apu 24/7</p>
+                    <p class="text-sm text-gray-400">Keskimääräinen vastausaika: 30 sekuntia</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-envelope text-4xl text-casino-light mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sähköposti</h3>
+                    <p class="text-gray-300 mb-4">support@speedyspins.fi</p>
+                    <p class="text-sm text-gray-400">Vastausaika: 2-4 tuntia</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-phone text-4xl text-casino-light mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Puhelin</h3>
+                    <p class="text-gray-300 mb-4">+358 9 123 4567</p>
+                    <p class="text-sm text-gray-400">Ma-Su 8:00-24:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Muut Kampanjat</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="promo-card">
+                    <i class="fas fa-calendar-week text-4xl text-casino-light mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Viikoittainen Cashback</h3>
+                    <p class="text-gray-300">Saa takaisin 10% tappioistasi joka viikko. Maksimi cashback €500.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-trophy text-4xl text-casino-light mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Kuukausiturnaus</h3>
+                    <p class="text-gray-300">Kilpaile muita pelaajia vastaan €10,000 palkintopotista.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-gift text-4xl text-casino-light mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Syntymäpäiväbonus</h3>
+                    <p class="text-gray-300">Juhli syntymäpäivääsi erikoisbonuksella ja ilmaiskierroksilla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-20 bg-casino-dark/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Luotettavuus ja Lisenssit</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 mt-12">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt text-4xl text-green-400 mb-2"></i>
+                    <div class="font-bold">Anjouan Gaming</div>
+                    <div class="text-sm text-gray-400">Lisenssi #8048/JAZ</div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-lock text-4xl text-blue-400 mb-2"></i>
+                    <div class="font-bold">SSL Suojaus</div>
+                    <div class="text-sm text-gray-400">256-bit salaus</div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-random text-4xl text-purple-400 mb-2"></i>
+                    <div class="font-bold">RNG Sertifioitu</div>
+                    <div class="text-sm text-gray-400">Reilu pelaaminen</div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield text-4xl text-yellow-400 mb-2"></i>
+                    <div class="font-bold">Vastuullinen Pelaaminen</div>
+                    <div class="text-sm text-gray-400">Pelaajan suoja</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Usein Kysytyt Kysymykset</h2>
+            <div class="max-w-4xl mx-auto mt-12">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kuinka nopeasti kotiutukset käsitellään?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Trustly-kotiutukset ovat välittömiä, pankkisiirrot 1-3 arkipäivää ja e-lompakot 24 tunnin sisällä.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Onko bonuksilla kierrätysvaatimuksia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, tervetuliaisbonuksella on 35x kierrätysvaatimus (bonus + talletus). Ilmaiskierrosten voitot tulee kierrättää 35 kertaa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Voiko pelejä pelata mobiililla?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, kaikki pelit toimivat saumattomasti mobiililaitteilla. Ei tarvitse ladata sovellusta.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Onko asiakaspalvelu suomeksi?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, asiakaspalvelumme puhuu sujuvaa suomea ja on käytettävissä 24/7 live-chatin kautta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-casino-dark py-12 border-t border-casino-blue/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-casino-light">Slotit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Jackpotit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/responsible-gaming" class="hover:text-casino-light">Tietosuojakäytäntö</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-casino-light">Vastuullinen pelaaminen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>Peluuri: 0800 100 101</li>
+                        <li><i class="fas fa-globe mr-2"></i>peluuri.fi</li>
+                        <li><a href="#" class="hover:text-casino-light">Itsesulku</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pelirajoitukset</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-casino-blue/30 pt-8 text-center text-gray-400">
+                <p class="mb-4">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-400"></i>
+                    Uhkapelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Tarkista onko uhkapelaaminen laillista alueellasi. 18+
+                </p>
+                <p class="mb-4">
+                    Kuinka kirjautua sisään: Klikkaa "Pelaa Nyt" -nappia ja luo tili tai kirjaudu sisään olemassa olevilla tunnuksillasi.
+                </p>
+                <p>&copy; 2024 Speedy Spins Casino. Kaikki oikeudet pidätetään. | Anjouan Gaming License #8048/JAZ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

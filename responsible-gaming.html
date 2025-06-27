@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastuullinen Pelaaminen - Speedy Spins Casino</title>
+    <meta name="description" content="Pelaa vastuullisesti Speedy Spins Casinossa. Saa apua ongelmapelaamiseen ja testaa pelikäyttäytymisesi. Turvalliset pelirajat ja itsesulku.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-blue': '#1e40af',
+                        'casino-dark': '#0f172a',
+                        'casino-light': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" style="top: 10%; left: 5%;">💥</div>
+        <div class="floating-emoji" style="top: 20%; right: 10%;">🎯</div>
+        <div class="floating-emoji" style="top: 60%; left: 8%;">💸</div>
+        <div class="floating-emoji" style="top: 80%; right: 15%;">€</div>
+        <div class="floating-emoji" style="top: 40%; left: 90%;">🚀</div>
+        <div class="floating-emoji" style="top: 70%; left: 3%;">⭐</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-4 left-4 right-4 z-50 bg-black/80 backdrop-blur-lg rounded-2xl border border-casino-blue/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#hero" class="nav-link">Koti</a>
+                    <a href="/#games" class="nav-link">Pelit</a>
+                    <a href="/protomotions" class="nav-link">Bonukset</a>
+                    <a href="/#about" class="nav-link">Tietoa</a>
+                    <a href="/faq" class="nav-link">FAQ</a>
+                </div>
+                <button onclick="redirectToDeposit()" class="cta-button">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="hero-title mb-6">Vastuullinen Pelaaminen</h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Pelaaminen on hauskaa, kun se pysyy hallinnassa. Tarjoamme työkaluja ja tukea vastuulliseen pelaamiseen.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self-Check Test -->
+        <section class="py-20 bg-casino-dark/30">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Itsearviointitesti</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bonus-review-card">
+                        <p class="text-lg mb-6 text-center">
+                            Vastaa seuraaviin kysymyksiin rehellisesti arvioidaksesi pelikäyttäytymistäsi:
+                        </p>
+                        
+                        <div id="self-check-test" class="space-y-6">
+                            <div class="test-question">
+                                <p class="font-semibold mb-3">1. Pelaan usein pidempään kuin alun perin aioin?</p>
+                                <div class="flex gap-4">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q1" value="0" class="mr-2">
+                                        <span>Ei koskaan</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q1" value="1" class="mr-2">
+                                        <span>Joskus</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q1" value="2" class="mr-2">
+                                        <span>Usein</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q1" value="3" class="mr-2">
+                                        <span>Aina</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="test-question">
+                                <p class="font-semibold mb-3">2. Pelaan suuremmilla summilla kuin mihin minulla on varaa?</p>
+                                <div class="flex gap-4">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q2" value="0" class="mr-2">
+                                        <span>Ei koskaan</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q2" value="1" class="mr-2">
+                                        <span>Joskus</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q2" value="2" class="mr-2">
+                                        <span>Usein</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q2" value="3" class="mr-2">
+                                        <span>Aina</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="test-question">
+                                <p class="font-semibold mb-3">3. Ajattelen pelaamista suurimman osan ajasta?</p>
+                                <div class="flex gap-4">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q3" value="0" class="mr-2">
+                                        <span>Ei koskaan</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q3" value="1" class="mr-2">
+                                        <span>Joskus</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q3" value="2" class="mr-2">
+                                        <span>Usein</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q3" value="3" class="mr-2">
+                                        <span>Aina</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="test-question">
+                                <p class="font-semibold mb-3">4. Pelaan paetakseni ongelmia tai huonoa oloa?</p>
+                                <div class="flex gap-4">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q4" value="0" class="mr-2">
+                                        <span>Ei koskaan</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q4" value="1" class="mr-2">
+                                        <span>Joskus</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q4" value="2" class="mr-2">
+                                        <span>Usein</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q4" value="3" class="mr-2">
+                                        <span>Aina</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="test-question">
+                                <p class="font-semibold mb-3">5. Olen valehdellut pelaamisestani läheisilleni?</p>
+                                <div class="flex gap-4">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q5" value="0" class="mr-2">
+                                        <span>Ei koskaan</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q5" value="1" class="mr-2">
+                                        <span>Joskus</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q5" value="2" class="mr-2">
+                                        <span>Usein</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="q5" value="3" class="mr-2">
+                                        <span>Aina</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-8">
+                                <button onclick="calculateTestResult()" class="cta-button-large">
+                                    <i class="fas fa-calculator mr-2"></i>Laske Tulos
+                                </button>
+                            </div>
+
+                            <div id="test-result" class="hidden mt-8 p-6 rounded-lg border-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Resources -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Apua Ongelmapelaamiseen</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <div class="support-card">
+                        <i class="fas fa-phone text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Peluuri ry</h3>
+                        <p class="text-gray-300 mb-4">Maksaton neuvontapuhelin</p>
+                        <p class="font-bold text-casino-light">0800 100 101</p>
+                        <p class="text-sm text-gray-400">Ma-To 12-21, Pe 12-15</p>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-globe text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Peluuri.fi</h3>
+                        <p class="text-gray-300 mb-4">Verkkopalvelu ja chat</p>
+                        <a href="https://peluuri.fi" target="_blank" class="text-casino-light hover:underline">
+                            peluuri.fi
+                        </a>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-comments text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Ehkäisevä päihdetyö EHYT</h3>
+                        <p class="text-gray-300 mb-4">Neuvonta ja tuki</p>
+                        <p class="font-bold text-casino-light">0800 100 101</p>
+                        <p class="text-sm text-gray-400">Arkisin 9-15</p>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-user-md text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Terveyskeskus</h3>
+                        <p class="text-gray-300 mb-4">Lääkärin arvio ja hoito</p>
+                        <p class="text-sm text-gray-400">Ota yhteyttä omaan terveyskeskukseesi</p>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-users text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Nimettömät Pelurit</h3>
+                        <p class="text-gray-300 mb-4">Vertaistukiryhmä</p>
+                        <a href="https://www.nimettomatpelurit.fi" target="_blank" class="text-casino-light hover:underline">
+                            nimettomatpelurit.fi
+                        </a>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-heart text-4xl text-casino-light mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Läheisten tuki</h3>
+                        <p class="text-gray-300 mb-4">Apu pelaajan läheisille</p>
+                        <p class="text-sm text-gray-400">Peluuri tarjoaa tukea myös läheisille</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gaming Tips -->
+        <section class="py-20 bg-casino-dark/30">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Vinkkejä Vastuulliseen Pelaamiseen</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-8 mt-12">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Aseta Aikarajat</h3>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>• Päätä etukäteen kuinka kauan pelaat</li>
+                                <li>• Käytä kelloa tai hälytystä</li>
+                                <li>• Pidä taukoja säännöllisesti</li>
+                                <li>• Älä pelaa väsyneenä tai stressaantuneena</li>
+                            </ul>
+                        </div>
+
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-euro-sign"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Hallitse Budjettia</h3>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>• Pelaa vain varoilla joihin sinulla on varaa</li>
+                                <li>• Aseta päivittäiset ja kuukausittaiset rajat</li>
+                                <li>• Älä koskaan lainaa rahaa pelaamiseen</li>
+                                <li>• Älä yrità voittaa tappioita takaisin</li>
+                            </ul>
+                        </div>
+
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Pidä Tasapaino</h3>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>• Pelaaminen on vain yksi harrastus muiden joukossa</li>
+                                <li>• Vietä aikaa perheen ja ystävien kanssa</li>
+                                <li>• Harrasta liikuntaa ja muita aktiviteetteja</li>
+                                <li>• Älä pelaa paetaksesi ongelmia</li>
+                            </ul>
+                        </div>
+
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-stop"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Tunnista Varoitusmerkit</h3>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>• Pelaaminen vie liikaa aikaa</li>
+                                <li>• Mieliala riippuu voitoista ja tappioista</li>
+                                <li>• Valehtelet pelaamisestasi</li>
+                                <li>• Laiminlyöt muita velvollisuuksia</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <p class="text-lg text-gray-300 mb-6">
+                            Muista: Pelaaminen on hauskaa vain silloin, kun se pysyy hallinnassa. 
+                            <a href="/" class="text-casino-light hover:underline">Speedy Spins Casino</a> 
+                            tarjoaa työkaluja vastuulliseen pelaamiseen.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button onclick="window.location.href='#self-limits'" class="cta-button-secondary">
+                                <i class="fas fa-cog mr-2"></i>Aseta Pelirajat
+                            </button>
+                            <button onclick="window.location.href='#self-exclusion'" class="cta-button-secondary">
+                                <i class="fas fa-ban mr-2"></i>Itsesulku
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self-Limitation Tools -->
+        <section id="self-limits" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Pelirajat ja Työkalut</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-8 mt-12">
+                        <div class="promo-card">
+                            <i class="fas fa-calendar-day text-4xl text-casino-light mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Talletusrajat</h3>
+                            <p class="text-gray-300">Aseta päivittäiset, viikoittaiset tai kuukausittaiset talletusrajat.</p>
+                        </div>
+
+                        <div class="promo-card">
+                            <i class="fas fa-clock text-4xl text-casino-light mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Peliaika-rajat</h3>
+                            <p class="text-gray-300">Rajoita päivittäistä pelaamisen kestoa automaattisesti.</p>
+                        </div>
+
+                        <div class="promo-card">
+                            <i class="fas fa-pause text-4xl text-casino-light mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Pelikatko</h3>
+                            <p class="text-gray-300">Ota määräaikainen tauko pelaamisesta 24h - 6 kuukautta.</p>
+                        </div>
+
+                        <div class="promo-card">
+                            <i class="fas fa-ban text-4xl text-casino-light mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Itsesulku</h3>
+                            <p class="text-gray-300">Sulje tilisi pysyvästi tai määräajaksi (min. 6 kuukautta).</p>
+                        </div>
+
+                        <div class="promo-card">
+                            <i class="fas fa-chart-line text-4xl text-casino-light mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Peliraportti</h3>
+                            <p class="text-gray-300">Seuraa pelaamistasi kuukausittaisilla raporteilla.</p>
+                        </div>
+
+                        <div class="promo-card">
+                            <i class="fas fa-shield-alt text-4xl text-casino-light mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Todellisuustarkistus</h3>
+                            <p class="text-gray-300">Saa muistutuksia peliajasta ja käytetyistä summista.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-casino-dark py-12 border-t border-casino-blue/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/">
+                    <img src="images/logo.png" class="h-12" alt="kasino logo" />
+                </a>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/" class="hover:text-casino-light">Slotit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Jackpotit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/responsible-gaming" class="hover:text-casino-light">Tietosuojakäytäntö</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-casino-light">Vastuullinen pelaaminen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>Peluuri: 0800 100 101</li>
+                        <li><i class="fas fa-globe mr-2"></i>peluuri.fi</li>
+                        <li><a href="#" class="hover:text-casino-light">Itsesulku</a></li>
+                        <li><a href="#" class="hover:text-casino-light">Pelirajoitukset</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-casino-blue/30 pt-8 text-center text-gray-400">
+                <p class="mb-4">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-400"></i>
+                    Uhkapelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Tarkista onko uhkapelaaminen laillista alueellasi. 18+
+                </p>
+                <p class="mb-4">
+                    Kuinka kirjautua sisään: Klikkaa "Pelaa Nyt" -nappia ja luo tili tai kirjaudu sisään olemassa olevilla tunnuksillasi.
+                </p>
+                <p>&copy; 2024 Speedy Spins Casino. Kaikki oikeudet pidätetään. | Anjouan Gaming License #8048/JAZ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function calculateTestResult() {
+            const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+            let totalScore = 0;
+            let allAnswered = true;
+
+            questions.forEach(q => {
+                const selected = document.querySelector(`input[name="${q}"]:checked`);
+                if (selected) {
+                    totalScore += parseInt(selected.value);
+                } else {
+                    allAnswered = false;
+                }
+            });
+
+            const resultDiv = document.getElementById('test-result');
+            
+            if (!allAnswered) {
+                resultDiv.innerHTML = `
+                    <div class="text-center text-yellow-400">
+                        <i class="fas fa-exclamation-triangle text-2xl mb-2"></i>
+                        <p>Vastaa kaikkiin kysymyksiin saadaksesi tuloksen.</p>
+                    </div>
+                `;
+                resultDiv.className = 'mt-8 p-6 rounded-lg border-2 border-yellow-400 bg-yellow-400/10';
+                resultDiv.classList.remove('hidden');
+                return;
+            }
+
+            let resultText, resultColor, resultIcon;
+
+            if (totalScore <= 3) {
+                resultText = "Pelikäyttäytymisesi vaikuttaa hallitulta. Jatka vastuullista pelaamista!";
+                resultColor = "border-green-400 bg-green-400/10 text-green-400";
+                resultIcon = "fas fa-check-circle";
+            } else if (totalScore <= 7) {
+                resultText = "Pelikäyttäytymisessäsi on joitakin riskitekijöitä. Harkitse pelirajoja ja tee itsearviointia säännöllisesti.";
+                resultColor = "border-yellow-400 bg-yellow-400/10 text-yellow-400";
+                resultIcon = "fas fa-exclamation-triangle";
+            } else {
+                resultText = "Pelikäyttäytymisessäsi on huolestuttavia piirteitä. Suosittelemme ottamaan yhteyttä Peluuri ry:hyn (0800 100 101) tai muuhun auttavaan tahoon.";
+                resultColor = "border-red-400 bg-red-400/10 text-red-400";
+                resultIcon = "fas fa-exclamation-circle";
+            }
+
+            resultDiv.innerHTML = `
+                <div class="text-center">
+                    <i class="${resultIcon} text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Tuloksesi: ${totalScore}/15 pistettä</h3>
+                    <p class="text-lg">${resultText}</p>
+                </div>
+            `;
+            resultDiv.className = `mt-8 p-6 rounded-lg border-2 ${resultColor}`;
+            resultDiv.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
